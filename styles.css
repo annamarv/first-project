@@ -1,0 +1,74 @@
+body {
+  background-image: url(./assets/tile.jpg);
+}
+
+@font-face {
+  font-family: Avi;
+  src: url(./assets/fonts/zai_Stempel.ttf);
+}
+
+h1 {
+  padding-top: 2%;
+  font-family: Avi;
+  font-size: x-large;
+  text-align: center;
+  font-weight: bolder;
+  text-shadow: 3px 4px 5px gray;
+}
+
+.note {
+  background-image: url(./assets/formbg.jpg);
+  height: 300px;
+  width: 650px;
+
+  margin: auto;
+
+  text-align: center;
+}
+
+.rows {
+  padding-top: 13px;
+}
+
+.note input {
+  margin-top: 36px;
+}
+
+.buttons {
+  margin-top: 40px;
+}
+
+.task {
+  background-image: url(./assets/notebg.png);
+  animation: fadeIn linear 3s;
+  width: 200px;
+  height: 250px;
+  margin-left: 50px;
+  margin-top: 80px;
+  float: left;
+  padding: 30px 32px 0px 19px;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.taskData {
+  overflow: auto;
+  height: 160px;
+}
+
+.bi-x-circle-fill {
+  visibility: hidden;
+  cursor: pointer;
+  float: right;
+}
+
+.task:hover .bi-x-circle-fill {
+  visibility: visible;
+}
